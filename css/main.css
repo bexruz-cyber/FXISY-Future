@@ -982,7 +982,6 @@ body {
 .footer_bottom_text {
     font-size: 14px;
     font-weight: 400;
-    line-height: 10px;
     background: linear-gradient(90deg, #B9C3F4 0%, #6C728E 100%);
     -webkit-background-clip: text;
     color: transparent;
