@@ -228,10 +228,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .3s;
-}
-
-.hero_search_btn:hover {
     box-shadow: 0px 0px 30px 0px #3A48E080;
 }
 
@@ -639,6 +635,7 @@ body {
     border: 1px solid #99DAFF4D;
     border-radius: 12px;
     position: relative;
+    box-shadow: 0px 0px 30px 0px #3A48E080;
 }
 
 .category_bottom_btn>div {
@@ -666,6 +663,7 @@ body {
     padding-top: 151px;
     padding-bottom: 175px;
 }
+
 .socila_container {
     max-width: 1148px;
     width: 100%;
@@ -675,31 +673,320 @@ body {
     align-items: center;
     gap: 15px;
 }
+
 .social_card {
+    border: 1.5px solid #191927;
+    /* border-image-source: linear-gradient(105.98deg, rgba(213, 223, 255, 0.1) 38.87%, rgba(128, 134, 153, 0.1) 82.23%); */
+    backdrop-filter: blur(8px);
+    background: linear-gradient(165.83deg, rgba(255, 255, 255, 0) 4.29%, rgba(255, 255, 255, 0.008) 72.39%);
+    padding-top: 203px;
+    padding-bottom: 40px;
+    padding-left: 52px;
+    padding-right: 52px;
+    border-radius: 16px;
 }
-.social_card_top {
+
+.email {
+    background-image: url(../img/social/email.png);
+    background-size: cover;
 }
-.social_card_top_img {
+
+.telegram {
+    background-image: url(../img/social/telegram.png);
+    background-size: cover;
 }
+
+.discord {
+    background-image: url(../img/social/discord.png);
+    background-size: cover;
+}
+
 .social_card_title {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 16px;
+    background: linear-gradient(179.8deg, #D3D5E5 0.17%, #AEB0C9 99.83%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 18px;
 }
+
 .social_text {
+    max-width: 257px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background: linear-gradient(90deg, #B9C3F4 0%, #6C728E 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 27px;
 }
+
 .social_form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: linear-gradient(165.83deg, rgba(255, 255, 255, 0.012) 4.29%, rgba(255, 255, 255, 0.005) 72.39%);
+    border: 1.5px solid #1A1A26;
+    border-radius: 12px;
+    overflow: hidden;
+    /* border-image-source: linear-gradient(145.19deg, rgba(213, 223, 255, 0.1) 20.51%, rgba(128, 134, 153, 0.1) 94.24%); */
+
 }
+
 .social_email {
+    background-color: transparent;
+    padding-left: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 8px;
+    color: #d9d9d9;
+    height: 8px;
 }
+
+.social_email::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 8px;
+    color: #5B5A60;
+}
+
 .social_email_submit_btn {
+    max-width: 44px;
+    width: 100%;
+    display: flex;
+    padding: 12px;
+    background-color: #3a48e0;
+    border: 1px solid #99DAFF4D;
+    border-radius: 12px;
+    transition: all .3s;
+    box-shadow: 0px 0px 30px 0px #3A48E080;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
+
+.social_email_submit_btn_arrow {
+    position: relative;
+    z-index: 20;
+    height: 20px;
+}
+
+.social_email_submit_btn_elipse {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
 .social_telegram_link {
+    box-shadow: 0px 0px 30px 0px #3A48E080;
+    position: relative;
+    background-color: #3A48E0;
+    border: 1px solid #99DAFF4D;
+    border-radius: 12px;
+    padding: 12px 24px;
+    display: flex;
+    max-width: 218px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.social_telegram_link>div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+
 .social_telegram_link_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    color: white;
 }
+
 .social_telegram_link_elipse {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
 }
+
 .social_discord_link {
+    box-shadow: 0px 0px 30px 0px #3A48E080;
+    position: relative;
+    background-color: #3A48E0;
+    border: 1px solid #99DAFF4D;
+    border-radius: 12px;
+    padding: 12px 24px;
+    display: flex;
+    max-width: 206px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.social_discord_link>div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+
 .social_discord_link_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    color: white;
 }
+
 .social_discord_link_elipse {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.footer {
+    padding-bottom: 130px;
+}
+
+.footer_container {
+    max-width: 1148px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.foooter_top {
+    display: flex;
+    align-items: start;
+    margin-bottom: 90px;
+}
+
+.footer_top_right {
+    max-width: 310px;
+    width: 100%;
+    margin-right: 109px;
+}
+
+.footer_logo_link {
+    display: flex;
+    max-width: 148px;
+    margin-bottom: 53px;
+}
+
+.footer_logo {
+    width: 100%;
+    object-fit: cover;
+}
+.footer_bg{
+    max-width: 946px;
+    height: 498px;
+    position: absolute;
+    top: 0;
+    left: 37px;
+    display: flex;
+}
+.footer_bg >img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer_top_right_title {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    background: linear-gradient(179.8deg, #D3D5E5 0.17%, #AEB0C9 99.83%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.footer_nav_title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #59595F;
+    margin-bottom: 40px;
+}
+
+.footer_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    list-style: none;
+}
+
+.footer_nav_link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: -0.02em;
+    background: linear-gradient(179.8deg, #D3D5E5 0.17%, #AEB0C9 99.83%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* .footer_top:nth-child(1) {
+    margin-right: 109px;
+} */
+.mr-123 {
+    margin-right: 123px;
+}
+
+.footer_center_line {
+    display: flex;
+    width: 100%;
+    height: 0.88px;
+    background: linear-gradient(85.22deg, rgba(0, 0, 0, 0) 7%, #8E92EE 35.72%, #3B49E0 45.62%, #000000 82.26%);
+    margin-bottom: 73px;
+}
+
+.footer_bottom {
+    display: flex;
+    align-items: start;
+    gap: 110px;
+}
+
+.footer_bottom_info_box_left {
+    display: flex;
+    align-items: start;
+    gap: 110px;
+}
+
+.footer_bottom_info_box {
+    max-width: 309px;
+    width: 100%;
+}
+
+.footer_info_text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #52535f;
+}
+
+.footer_bottom_info_box_right {
+    max-width: 309px;
+    width: 100%;
+}
+
+.footer_bottom_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    background: linear-gradient(90deg, #B9C3F4 0%, #6C728E 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    /* margin-top: 143px; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
