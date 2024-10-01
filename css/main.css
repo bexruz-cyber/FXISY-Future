@@ -896,6 +896,7 @@ body {
     top: 0;
     left: 37px;
     display: flex;
+    z-index: -1;
 }
 .footer_bg >img{
     width: 100%;
