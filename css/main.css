@@ -294,7 +294,7 @@ body {
 }
 
 .articles {
-    position: relative; 
+    position: relative;
     z-index: 20;
     padding-bottom: 14px;
 }
@@ -1562,85 +1562,101 @@ body {
     left: 0;
 }
 
-.faq_card{
+.faq_card {
     cursor: pointer;
 }
 
 @media(max-width:1350px) {
-    .faq_cards_container{
+    .faq_cards_container {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .faq_bg_container{
+
+    .faq_bg_container {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
 @media(max-width:1024px) {
-    .faq_cards_container{
+    .faq_cards_container {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         padding-left: 20px;
         padding-right: 20px;
     }
-    .faq_hero_link{
+
+    .faq_hero_link {
         margin-bottom: 30px;
     }
-    .faq_hero_title{
+
+    .faq_hero_title {
         font-size: 48px;
         margin-bottom: 30px;
     }
-    .faq_cards{
+
+    .faq_cards {
         padding-top: 50px;
         padding-bottom: 100px;
     }
-    .faq_hero{
+
+    .faq_hero {
         padding-top: 100px;
     }
 }
 
 @media(max-width:768px) {
-    .faq_cards_container{
+    .faq_cards_container {
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
-    .hover_faq_card_link{
+
+    .hover_faq_card_link {
         font-size: 14px;
     }
-    .faq_hero_link{
+
+    .faq_hero_link {
         margin-bottom: 25px;
         width: fit-content;
     }
-    .faq_hero_link_text{
+
+    .faq_hero_link_text {
         font-size: 10px;
     }
-    .faq_hero_title{
+
+    .faq_hero_title {
         font-size: 30px;
         margin-bottom: 20px;
     }
-    .hero_search_btn > div > span{
+
+    .hero_search_btn>div>span {
         display: none;
     }
-    .faq_card_question{
+
+    .faq_card_question {
         display: none;
     }
-    .faq_cards_container{
+
+    .faq_cards_container {
         margin-bottom: 25px;
     }
-    .faq_card_title{
+
+    .faq_card_title {
         font-size: 20px;
     }
-    .faq_card_text{
+
+    .faq_card_text {
         font-size: 16px;
     }
-    .faq_question{
+
+    .faq_question {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .faq_card_question_title{
+
+    .faq_card_question_title {
         font-size: 22px;
     }
 }
